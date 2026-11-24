@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "type", "topic", "difficulty", "question", "model_answer", "key_points"],
+    "properties": {
+      "id": {"type": "string"},
+      "type": {"enum": ["concept", "coding", "sql"]},
+      "topic": {"type": "string"},
+      "difficulty": {"type": "integer", "minimum": 1, "maximum": 3},
+      "question": {"type": "string"},
+      "model_answer": {"type": "string"},
+      "key_points": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["point", "weight"],
+          "properties": {"point": {"type": "string"}, "weight": {"type": "number"}}
+        }
+      },
+      "follow_ups": {"type": "array", "items": {"type": "string"}},
+      "jd_tags": {"type": "array", "items": {"type": "string"}},
+      "signature": {"type": "string"},
+      "starter_code": {
+        "type": "object",
+        "properties": {"python": {"type": "string"}, "java": {"type": "string"}, "c": {"type": "string"}}
+      },
+      "sample_tests": {"type": "array"},
+      "hidden_tests": {"type": "array"},
+      "time_limit_ms": {"type": "integer"},
+      "memory_mb": {"type": "integer"}
+    }
+  }
+}

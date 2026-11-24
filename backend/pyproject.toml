@@ -1,0 +1,25 @@
+[project]
+name = "mocksie"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi", "uvicorn[standard]", "pydantic>=2",
+  "pdfplumber",
+  "openai", "httpx",
+  # voice: raw websockets to Deepgram Flux (speech to text) and Aura-2 (text to speech). Already in the lock through
+  # uvicorn[standard]; named here because we import it directly. Pipecat was considered and not used (see README).
+  "websockets",
+]
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[tool.uv]
+package = false
+# Only resolve for platforms we run on. This also keeps Emscripten/Pyodide-only packages (e.g. httpx2-jsfetch,
+# whose publisher cannot be verified) out of the lockfile.
+environments = ["sys_platform == 'win32'", "sys_platform == 'linux'", "sys_platform == 'darwin'"]
+
+[tool.pytest.ini_options]
+testpaths = ["../tests"]
+pythonpath = [".."]

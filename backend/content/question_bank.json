@@ -1,0 +1,1901 @@
+[
+ {
+  "id": "OPEN-001",
+  "book_id": "DEMO-01",
+  "type": "concept",
+  "topic": "Opening",
+  "stage": "intro",
+  "difficulty": 1,
+  "difficulty_source": "authored",
+  "question": "To start, please introduce yourself: what you study, one project you are proud of, and the kind of work you hope to do.",
+  "model_answer": "A short, structured introduction: current course and year, one concrete project with the candidate's own contribution, and a clear and honest direction such as the type of role or technology they want to grow in.",
+  "go_deeper": "",
+  "key_points": [
+   {
+    "point": "Names the course, year or background briefly",
+    "weight": 2
+   },
+   {
+    "point": "Describes one concrete project and what they themselves did",
+    "weight": 4
+   },
+   {
+    "point": "States a clear, realistic direction or goal",
+    "weight": 3
+   },
+   {
+    "point": "Stays organised and to the point",
+    "weight": 2
+   }
+  ],
+  "key_points_source": "authored",
+  "follow_ups": [
+   "Which part of that project was hardest for you?",
+   "What would you like to learn in your first year at work?"
+  ],
+  "red_flags": [
+   "Only recites the resume with no detail",
+   "Cannot name a goal"
+  ],
+  "jd_tags": [
+   "hr"
+  ],
+  "voice_suitable": true,
+  "snippet": null,
+  "optional": false,
+  "excluded": false,
+  "review": []
+ },
+ {
+  "id": "WARM-001",
+  "book_id": "DEMO-02",
+  "type": "concept",
+  "topic": "Projects",
+  "stage": "warmup",
+  "difficulty": 1,
+  "difficulty_source": "authored",
+  "question": "Pick one project from your resume and walk me through the part you built yourself.",
+  "model_answer": "The candidate picks one project, explains the problem it solved, the pieces they personally built, one decision they made and why, and what they would change now.",
+  "go_deeper": "",
+  "key_points": [
+   {
+    "point": "Explains the problem the project solved",
+    "weight": 3
+   },
+   {
+    "point": "Separates their own work from the team's",
+    "weight": 4
+   },
+   {
+    "point": "Explains one design decision and the reason for it",
+    "weight": 4
+   },
+   {
+    "point": "Reflects on what they would improve",
+    "weight": 2
+   }
+  ],
+  "key_points_source": "authored",
+  "follow_ups": [
+   "What went wrong while you built it, and how did you find the cause?",
+   "How did you test that it worked?"
+  ],
+  "red_flags": [
+   "Cannot explain their own code",
+   "Claims all of a team project"
+  ],
+  "jd_tags": [
+   "project"
+  ],
+  "voice_suitable": true,
+  "snippet": null,
+  "optional": false,
+  "excluded": false,
+  "review": []
+ },
+ {
+  "id": "BEH-001",
+  "book_id": "DEMO-03",
+  "type": "concept",
+  "topic": "Behavioural",
+  "stage": "behavioural",
+  "difficulty": 1,
+  "difficulty_source": "authored",
+  "question": "Tell me about a time when a plan of yours went wrong. What did you change afterwards?",
+  "model_answer": "A real, specific example: what the plan was, what went wrong, how the candidate noticed, what they changed, and what they do differently now.",
+  "go_deeper": "",
+  "key_points": [
+   {
+    "point": "Gives one specific, real example",
+    "weight": 4
+   },
+   {
+    "point": "Owns their part of what went wrong",
+    "weight": 4
+   },
+   {
+    "point": "Describes a concrete change they made",
+    "weight": 4
+   },
+   {
+    "point": "Shows what they learned for next time",
+    "weight": 3
+   }
+  ],
+  "key_points_source": "authored",
+  "follow_ups": [
+   "How soon did you realise it was going wrong?",
+   "Who did you ask for help?"
+  ],
+  "red_flags": [
+   "Blames others entirely",
+   "Says nothing has ever gone wrong"
+  ],
+  "jd_tags": [
+   "behavioural"
+  ],
+  "voice_suitable": true,
+  "snippet": null,
+  "optional": false,
+  "excluded": false,
+  "review": []
+ },
+ {
+  "id": "CS-001",
+  "book_id": "DEMO-04",
+  "type": "concept",
+  "topic": "Data structures",
+  "stage": "tech",
+  "difficulty": 1,
+  "difficulty_source": "authored",
+  "question": "What is a hash map, and why is looking up a key usually fast?",
+  "model_answer": "A hash map stores key-value pairs. A hash function turns the key into a position in an array, so a lookup jumps straight there instead of scanning. It is fast on average, constant time, because keys spread out. Two keys can land in the same place (a collision), which is handled by keeping a small list per slot or probing for another slot. With many collisions the lookup slows down.",
+  "go_deeper": "Listen for average versus worst case, and for the idea that a good hash function spreads keys evenly.",
+  "key_points": [
+   {
+    "point": "A hash function turns the key into an array position",
+    "weight": 5
+   },
+   {
+    "point": "Lookup jumps to the position, so it is constant time on average",
+    "weight": 4
+   },
+   {
+    "point": "Collisions happen when two keys map to the same slot",
+    "weight": 3
+   },
+   {
+    "point": "Collisions are handled by chaining or probing",
+    "weight": 3
+   },
+   {
+    "point": "Many collisions make lookups slower",
+    "weight": 2
+   }
+  ],
+  "key_points_source": "authored",
+  "follow_ups": [
+   "What happens if two keys give the same hash?",
+   "Why must the hash of a key not change while it is in the map?"
+  ],
+  "red_flags": [
+   "Thinks a hash map keeps keys sorted"
+  ],
+  "jd_tags": [
+   "dsa",
+   "fundamentals"
+  ],
+  "voice_suitable": true,
+  "snippet": null,
+  "optional": false,
+  "excluded": false,
+  "review": []
+ },
+ {
+  "id": "CS-002",
+  "book_id": "DEMO-05",
+  "type": "concept",
+  "topic": "Web and systems",
+  "stage": "tech",
+  "difficulty": 2,
+  "difficulty_source": "authored",
+  "question": "A web page has become slow to load. In what order would you look for the cause, and what does each check tell you?",
+  "model_answer": "A sensible order: first check whether it is slow for everyone or one user, then the browser network panel to see which request is slow, then the server side for slow queries or heavy work, then the database (missing indexes, large result sets), then caching, then recent changes. Measure before changing anything and change one thing at a time.",
+  "go_deeper": "",
+  "key_points": [
+   {
+    "point": "Starts by narrowing down where the time goes, not by guessing",
+    "weight": 5
+   },
+   {
+    "point": "Uses the browser network panel or similar to find the slow request",
+    "weight": 4
+   },
+   {
+    "point": "Looks at server work and database queries (for example a missing index)",
+    "weight": 4
+   },
+   {
+    "point": "Mentions caching or recent changes as candidates",
+    "weight": 2
+   },
+   {
+    "point": "Measures first and changes one thing at a time",
+    "weight": 3
+   }
+  ],
+  "key_points_source": "authored",
+  "follow_ups": [
+   "How would you tell a slow query from a slow network?",
+   "What would you try first if the page is only slow at peak hours?"
+  ],
+  "red_flags": [
+   "Rewrites code before measuring anything"
+  ],
+  "jd_tags": [
+   "web",
+   "fundamentals"
+  ],
+  "voice_suitable": true,
+  "snippet": null,
+  "optional": false,
+  "excluded": false,
+  "review": []
+ },
+ {
+  "id": "OPEN-010",
+  "book_id": "DEMO-06",
+  "type": "concept",
+  "topic": "Closing",
+  "stage": "candidate_questions",
+  "difficulty": 1,
+  "difficulty_source": "authored",
+  "question": "Before we wrap up, what would you like to ask me about the role or the hiring process?",
+  "model_answer": "One or two thoughtful questions about the work, the team, learning and growth, or how the process continues, rather than questions already answered in the job description.",
+  "go_deeper": "",
+  "key_points": [
+   {
+    "point": "Asks at least one question about the role, team or learning",
+    "weight": 5
+   },
+   {
+    "point": "The question shows preparation or curiosity",
+    "weight": 3
+   },
+   {
+    "point": "Avoids opening with pay or leave",
+    "weight": 2
+   }
+  ],
+  "key_points_source": "authored",
+  "follow_ups": [],
+  "red_flags": [
+   "Has no question at all and no interest"
+  ],
+  "jd_tags": [
+   "hr"
+  ],
+  "voice_suitable": true,
+  "snippet": null,
+  "optional": false,
+  "excluded": false,
+  "review": []
+ },
+ {
+  "difficulty_source": "authored",
+  "key_points_source": "authored",
+  "go_deeper": "",
+  "jd_tags": [],
+  "voice_suitable": false,
+  "snippet": null,
+  "optional": false,
+  "excluded": false,
+  "review": [],
+  "id": "CODE-001",
+  "book_id": "DEMO-C1",
+  "type": "coding",
+  "topic": "Coding practice",
+  "stage": "coding",
+  "difficulty": 1,
+  "question": "Coding A — Sum of evens",
+  "model_answer": "Walk through the list once, add a number to a running total only when it is divisible by two (remember zero and negative numbers), and return the total. One pass, constant extra memory.",
+  "key_points": [
+   {
+    "point": "A single pass over the list",
+    "weight": 3
+   },
+   {
+    "point": "Tests evenness with the remainder after dividing by two",
+    "weight": 4
+   },
+   {
+    "point": "Handles negatives, zero and an empty list",
+    "weight": 3
+   }
+  ],
+  "follow_ups": [
+   "What is the time and space cost?",
+   "How does your code treat a negative odd number?"
+  ],
+  "red_flags": [
+   "Cannot explain why the empty list returns 0"
+  ],
+  "slug": "sum_of_evens",
+  "signature": "sum_of_evens(nums)",
+  "statement": "Return the sum of the even numbers in the list. Negative numbers count, zero is even, and an empty list (or one with no even numbers) gives 0.",
+  "io": {
+   "input": "Line 1: count k. Line 2: k space-separated integers (empty line if k = 0).",
+   "output": "Print the integer.",
+   "input_kind": "ints",
+   "output_kind": "int"
+  },
+  "starter_code": {
+   "python": "import sys\n\n\ndef sum_of_evens(nums):\n    # Return an int.\n    pass\n\n\ndef main():\n    k = int(sys.stdin.readline())\n    nums = list(map(int, sys.stdin.readline().split()))\n    result = sum_of_evens(nums)\n    print(result)\n\n\nmain()\n",
+   "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n    static int sumOfEvens(int[] nums) {\n        // Return an int.\n        return 0;\n    }\n\n    // ---- input/output plumbing: you do not need to change anything below ----\n    public static void main(String[] args) throws IOException {\n        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));\n        int k = Integer.parseInt(in.readLine().trim());\n        int[] nums = readInts(in);\n        int result = sumOfEvens(nums);\n        System.out.println(result);\n    }\n\n    static int[] readInts(BufferedReader in) throws IOException {\n        String line = in.readLine();\n        if (line == null || line.trim().isEmpty()) return new int[0];\n        StringTokenizer st = new StringTokenizer(line);\n        int[] out = new int[st.countTokens()];\n        for (int i = 0; i < out.length; i++) out[i] = Integer.parseInt(st.nextToken());\n        return out;\n    }\n}\n",
+   "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nint sum_of_evens(const int *nums, int k) {\n    /* Return the int. */\n    return 0;\n}\n\n/* ---- input/output plumbing: you do not need to change anything below ---- */\nstatic char *read_line(void) {\n    size_t cap = 256, len = 0;\n    char *buf = malloc(cap);\n    int ch;\n    while ((ch = fgetc(stdin)) != EOF && ch != '\\n') {\n        if (len + 2 > cap) { cap *= 2; buf = realloc(buf, cap); }\n        buf[len++] = (char)ch;\n    }\n    while (len > 0 && buf[len - 1] == '\\r') len--;\n    buf[len] = '\\0';\n    return buf;\n}\n\nstatic int *read_ints(int count) {\n    int *out = malloc(sizeof(int) * (count + 1));\n    char *line = read_line(), *p = line;\n    for (int i = 0; i < count; i++) out[i] = (int)strtol(p, &p, 10);\n    free(line);\n    return out;\n}\n\nint main(void) {\n    int k = atoi(read_line());\n    int *nums = read_ints(k);\n    int result = sum_of_evens(nums, k);\n    printf(\"%d\\n\", result);\n    return 0;\n}\n"
+  },
+  "sample_tests": [
+   {
+    "stdin": "4\n1 2 3 4\n",
+    "expected": "6\n",
+    "weight": 1,
+    "edge": false,
+    "visible": true
+   },
+   {
+    "stdin": "2\n7 9\n",
+    "expected": "0\n",
+    "weight": 1,
+    "edge": false,
+    "visible": true
+   }
+  ],
+  "hidden_tests": [
+   {
+    "stdin": "0\n\n",
+    "expected": "0\n",
+    "weight": 2,
+    "edge": true,
+    "visible": false
+   },
+   {
+    "stdin": "1\n0\n",
+    "expected": "0\n",
+    "weight": 2,
+    "edge": true,
+    "visible": false
+   },
+   {
+    "stdin": "3\n-2 -4 5\n",
+    "expected": "-6\n",
+    "weight": 2,
+    "edge": true,
+    "visible": false
+   },
+   {
+    "stdin": "1\n2\n",
+    "expected": "2\n",
+    "weight": 1,
+    "edge": false,
+    "visible": false
+   },
+   {
+    "stdin": "3\n10 20 30\n",
+    "expected": "60\n",
+    "weight": 1,
+    "edge": false,
+    "visible": false
+   },
+   {
+    "stdin": "4\n1 3 5 7\n",
+    "expected": "0\n",
+    "weight": 2,
+    "edge": true,
+    "visible": false
+   },
+   {
+    "stdin": "6\n-1 2 -3 4 -5 6\n",
+    "expected": "12\n",
+    "weight": 1,
+    "edge": false,
+    "visible": false
+   },
+   {
+    "stdin": "1000\n-500 -499 -498 -497 -496 -495 -494 -493 -492 -491 -490 -489 -488 -487 -486 -485 -484 -483 -482 -481 -480 -479 -478 -477 -476 -475 -474 -473 -472 -471 -470 -469 -468 -467 -466 -465 -464 -463 -462 -461 -460 -459 -458 -457 -456 -455 -454 -453 -452 -451 -450 -449 -448 -447 -446 -445 -444 -443 -442 -441 -440 -439 -438 -437 -436 -435 -434 -433 -432 -431 -430 -429 -428 -427 -426 -425 -424 -423 -422 -421 -420 -419 -418 -417 -416 -415 -414 -413 -412 -411 -410 -409 -408 -407 -406 -405 -404 -403 -402 -401 -400 -399 -398 -397 -396 -395 -394 -393 -392 -391 -390 -389 -388 -387 -386 -385 -384 -383 -382 -381 -380 -379 -378 -377 -376 -375 -374 -373 -372 -371 -370 -369 -368 -367 -366 -365 -364 -363 -362 -361 -360 -359 -358 -357 -356 -355 -354 -353 -352 -351 -350 -349 -348 -347 -346 -345 -344 -343 -342 -341 -340 -339 -338 -337 -336 -335 -334 -333 -332 -331 -330 -329 -328 -327 -326 -325 -324 -323 -322 -321 -320 -319 -318 -317 -316 -315 -314 -313 -312 -311 -310 -309 -308 -307 -306 -305 -304 -303 -302 -301 -300 -299 -298 -297 -296 -295 -294 -293 -292 -291 -290 -289 -288 -287 -286 -285 -284 -283 -282 -281 -280 -279 -278 -277 -276 -275 -274 -273 -272 -271 -270 -269 -268 -267 -266 -265 -264 -263 -262 -261 -260 -259 -258 -257 -256 -255 -254 -253 -252 -251 -250 -249 -248 -247 -246 -245 -244 -243 -242 -241 -240 -239 -238 -237 -236 -235 -234 -233 -232 -231 -230 -229 -228 -227 -226 -225 -224 -223 -222 -221 -220 -219 -218 -217 -216 -215 -214 -213 -212 -211 -210 -209 -208 -207 -206 -205 -204 -203 -202 -201 -200 -199 -198 -197 -196 -195 -194 -193 -192 -191 -190 -189 -188 -187 -186 -185 -184 -183 -182 -181 -180 -179 -178 -177 -176 -175 -174 -173 -172 -171 -170 -169 -168 -167 -166 -165 -164 -163 -162 -161 -160 -159 -158 -157 -156 -155 -154 -153 -152 -151 -150 -149 -148 -147 -146 -145 -144 -143 -142 -141 -140 -139 -138 -137 -136 -135 -134 -133 -132 -131 -130 -129 -128 -127 -126 -125 -124 -123 -122 -121 -120 -119 -118 -117 -116 -115 -114 -113 -112 -111 -110 -109 -108 -107 -106 -105 -104 -103 -102 -101 -100 -99 -98 -97 -96 -95 -94 -93 -92 -91 -90 -89 -88 -87 -86 -85 -84 -83 -82 -81 -80 -79 -78 -77 -76 -75 -74 -73 -72 -71 -70 -69 -68 -67 -66 -65 -64 -63 -62 -61 -60 -59 -58 -57 -56 -55 -54 -53 -52 -51 -50 -49 -48 -47 -46 -45 -44 -43 -42 -41 -40 -39 -38 -37 -36 -35 -34 -33 -32 -31 -30 -29 -28 -27 -26 -25 -24 -23 -22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12 -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499\n",
+    "expected": "-500\n",
+    "weight": 1,
+    "edge": false,
+    "visible": false
+   }
+  ],
+  "time_limit_ms": 2000,
+  "memory_mb": 256
+ },
+ {
+  "difficulty_source": "authored",
+  "key_points_source": "authored",
+  "go_deeper": "",
+  "jd_tags": [],
+  "voice_suitable": false,
+  "snippet": null,
+  "optional": false,
+  "excluded": false,
+  "review": [],
+  "id": "CODE-002",
+  "book_id": "DEMO-C2",
+  "type": "coding",
+  "topic": "Coding practice",
+  "stage": "coding",
+  "difficulty": 2,
+  "question": "Coding B — Longest run",
+  "model_answer": "Walk the list once while keeping the length of the current run: if this value equals the previous one the run grows, otherwise it restarts at 1. Keep the largest run seen. Return 0 for an empty list. One pass, constant extra memory.",
+  "key_points": [
+   {
+    "point": "Compares each value with the one before it",
+    "weight": 4
+   },
+   {
+    "point": "Resets the run length to 1 when the value changes",
+    "weight": 4
+   },
+   {
+    "point": "Tracks the best run seen so far",
+    "weight": 3
+   },
+   {
+    "point": "Handles the empty list",
+    "weight": 2
+   }
+  ],
+  "follow_ups": [
+   "What is the time and space cost?",
+   "How would you also return where the longest run starts?"
+  ],
+  "red_flags": [
+   "Counts equal values anywhere in the list instead of next to each other"
+  ],
+  "slug": "longest_run",
+  "signature": "longest_run(nums)",
+  "statement": "A run is a stretch of equal values next to each other. Return the length of the longest run in the list (0 for an empty list).",
+  "io": {
+   "input": "Line 1: count k. Line 2: k space-separated integers (empty line if k = 0).",
+   "output": "Print the integer.",
+   "input_kind": "ints",
+   "output_kind": "int"
+  },
+  "starter_code": {
+   "python": "import sys\n\n\ndef longest_run(nums):\n    # Return an int.\n    pass\n\n\ndef main():\n    k = int(sys.stdin.readline())\n    nums = list(map(int, sys.stdin.readline().split()))\n    result = longest_run(nums)\n    print(result)\n\n\nmain()\n",
+   "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n    static int longestRun(int[] nums) {\n        // Return an int.\n        return 0;\n    }\n\n    // ---- input/output plumbing: you do not need to change anything below ----\n    public static void main(String[] args) throws IOException {\n        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));\n        int k = Integer.parseInt(in.readLine().trim());\n        int[] nums = readInts(in);\n        int result = longestRun(nums);\n        System.out.println(result);\n    }\n\n    static int[] readInts(BufferedReader in) throws IOException {\n        String line = in.readLine();\n        if (line == null || line.trim().isEmpty()) return new int[0];\n        StringTokenizer st = new StringTokenizer(line);\n        int[] out = new int[st.countTokens()];\n        for (int i = 0; i < out.length; i++) out[i] = Integer.parseInt(st.nextToken());\n        return out;\n    }\n}\n",
+   "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nint longest_run(const int *nums, int k) {\n    /* Return the int. */\n    return 0;\n}\n\n/* ---- input/output plumbing: you do not need to change anything below ---- */\nstatic char *read_line(void) {\n    size_t cap = 256, len = 0;\n    char *buf = malloc(cap);\n    int ch;\n    while ((ch = fgetc(stdin)) != EOF && ch != '\\n') {\n        if (len + 2 > cap) { cap *= 2; buf = realloc(buf, cap); }\n        buf[len++] = (char)ch;\n    }\n    while (len > 0 && buf[len - 1] == '\\r') len--;\n    buf[len] = '\\0';\n    return buf;\n}\n\nstatic int *read_ints(int count) {\n    int *out = malloc(sizeof(int) * (count + 1));\n    char *line = read_line(), *p = line;\n    for (int i = 0; i < count; i++) out[i] = (int)strtol(p, &p, 10);\n    free(line);\n    return out;\n}\n\nint main(void) {\n    int k = atoi(read_line());\n    int *nums = read_ints(k);\n    int result = longest_run(nums, k);\n    printf(\"%d\\n\", result);\n    return 0;\n}\n"
+  },
+  "sample_tests": [
+   {
+    "stdin": "6\n1 1 2 2 2 3\n",
+    "expected": "3\n",
+    "weight": 1,
+    "edge": false,
+    "visible": true
+   },
+   {
+    "stdin": "3\n5 6 5\n",
+    "expected": "1\n",
+    "weight": 1,
+    "edge": false,
+    "visible": true
+   }
+  ],
+  "hidden_tests": [
+   {
+    "stdin": "0\n\n",
+    "expected": "0\n",
+    "weight": 2,
+    "edge": true,
+    "visible": false
+   },
+   {
+    "stdin": "1\n4\n",
+    "expected": "1\n",
+    "weight": 2,
+    "edge": true,
+    "visible": false
+   },
+   {
+    "stdin": "4\n7 7 7 7\n",
+    "expected": "4\n",
+    "weight": 2,
+    "edge": true,
+    "visible": false
+   },
+   {
+    "stdin": "4\n1 2 3 4\n",
+    "expected": "1\n",
+    "weight": 1,
+    "edge": false,
+    "visible": false
+   },
+   {
+    "stdin": "7\n2 2 3 3 3 2 2\n",
+    "expected": "3\n",
+    "weight": 1,
+    "edge": false,
+    "visible": false
+   },
+   {
+    "stdin": "6\n9 9 1 9 9 9\n",
+    "expected": "3\n",
+    "weight": 2,
+    "edge": true,
+    "visible": false
+   },
+   {
+    "stdin": "5\n-1 -1 -1 0 0\n",
+    "expected": "3\n",
+    "weight": 1,
+    "edge": false,
+    "visible": false
+   },
+   {
+    "stdin": "3701\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n",
+    "expected": "1501\n",
+    "weight": 2,
+    "edge": true,
+    "visible": false
+   }
+  ],
+  "time_limit_ms": 2000,
+  "memory_mb": 256
+ },
+ {
+  "difficulty_source": "authored",
+  "key_points_source": "authored",
+  "go_deeper": "",
+  "jd_tags": [],
+  "voice_suitable": false,
+  "snippet": null,
+  "optional": false,
+  "excluded": false,
+  "review": [],
+  "id": "SQL-001",
+  "book_id": "DEMO-S1",
+  "type": "sql",
+  "topic": "SQL",
+  "stage": "sql",
+  "difficulty": 2,
+  "question": "SQL 1 — Authors with at least two books",
+  "model_answer": "Join Authors to Books on author_id, group by the author (by id, so authors with the same name stay apart), count the books, and keep groups with a count of at least two using HAVING.",
+  "key_points": [
+   {
+    "point": "Joins the two tables on author_id",
+    "weight": 3
+   },
+   {
+    "point": "Groups by the author id",
+    "weight": 4
+   },
+   {
+    "point": "Filters the groups with HAVING, not WHERE",
+    "weight": 4
+   }
+  ],
+  "follow_ups": [
+   "What changes if authors with no books must also be listed?"
+  ],
+  "red_flags": [
+   "Uses WHERE COUNT(*) >= 2"
+  ],
+  "slug": "prolific_authors",
+  "statement": "List the authors who have written at least TWO books, with how many books each has. Return author_name and book_count. Count books per author (two different authors may share a name: they stay separate rows). Books with no author (author_id is NULL) belong to nobody and are never counted. Return the columns in this order: author_name, book_count. Only the order and the values are checked; the column names you choose are ignored.",
+  "schema": [
+   "CREATE TABLE Authors (author_id INTEGER PRIMARY KEY, author_name TEXT NOT NULL)",
+   "CREATE TABLE Books (book_id INTEGER PRIMARY KEY, title TEXT NOT NULL, author_id INTEGER, price INTEGER)"
+  ],
+  "sample_rows": {
+   "Authors": [
+    [
+     1,
+     "Meera Iyer"
+    ],
+    [
+     2,
+     "Tom Becker"
+    ],
+    [
+     3,
+     "Lina Okafor"
+    ],
+    [
+     4,
+     "Raj Patel"
+    ]
+   ],
+   "Books": [
+    [
+     1,
+     "Tidal Maps",
+     1,
+     350
+    ],
+    [
+     2,
+     "Quiet Engines",
+     1,
+     420
+    ],
+    [
+     3,
+     "The Long Table",
+     2,
+     280
+    ],
+    [
+     4,
+     "Paper Harbours",
+     3,
+     510
+    ],
+    [
+     5,
+     "Glass Orchard",
+     3,
+     450
+    ],
+    [
+     6,
+     "Night Ferry",
+     3,
+     390
+    ],
+    [
+     7,
+     "Loose Pages",
+     null,
+     150
+    ]
+   ]
+  },
+  "sample_expected": [
+   [
+    "Meera Iyer",
+    2
+   ],
+   [
+    "Lina Okafor",
+    3
+   ]
+  ],
+  "columns": [
+   "author_name",
+   "book_count"
+  ],
+  "n_columns": 2,
+  "reference_query": "SELECT a.author_name, COUNT(*) AS book_count FROM Authors a JOIN Books b ON b.author_id = a.author_id GROUP BY a.author_id, a.author_name HAVING COUNT(*) >= 2;",
+  "ordered": false,
+  "hidden_datasets": [
+   {
+    "name": "no_books",
+    "edge": true,
+    "weight": 2,
+    "tables": {
+     "Authors": [
+      [
+       1,
+       "Meera Iyer"
+      ],
+      [
+       2,
+       "Tom Becker"
+      ],
+      [
+       3,
+       "Lina Okafor"
+      ],
+      [
+       4,
+       "Raj Patel"
+      ]
+     ],
+     "Books": []
+    },
+    "expected": []
+   },
+   {
+    "name": "nobody_qualifies",
+    "edge": false,
+    "weight": 1,
+    "tables": {
+     "Authors": [
+      [
+       1,
+       "Meera Iyer"
+      ],
+      [
+       2,
+       "Tom Becker"
+      ],
+      [
+       3,
+       "Lina Okafor"
+      ],
+      [
+       4,
+       "Raj Patel"
+      ]
+     ],
+     "Books": [
+      [
+       1,
+       "A",
+       1,
+       10
+      ],
+      [
+       2,
+       "B",
+       2,
+       20
+      ],
+      [
+       3,
+       "C",
+       3,
+       30
+      ]
+     ]
+    },
+    "expected": []
+   },
+   {
+    "name": "exactly_two",
+    "edge": true,
+    "weight": 2,
+    "tables": {
+     "Authors": [
+      [
+       1,
+       "Meera Iyer"
+      ],
+      [
+       2,
+       "Tom Becker"
+      ],
+      [
+       3,
+       "Lina Okafor"
+      ],
+      [
+       4,
+       "Raj Patel"
+      ]
+     ],
+     "Books": [
+      [
+       1,
+       "A",
+       1,
+       10
+      ],
+      [
+       2,
+       "B",
+       1,
+       20
+      ]
+     ]
+    },
+    "expected": [
+     [
+      "Meera Iyer",
+      2
+     ]
+    ]
+   },
+   {
+    "name": "null_author_never_counted",
+    "edge": true,
+    "weight": 2,
+    "tables": {
+     "Authors": [
+      [
+       1,
+       "Meera Iyer"
+      ],
+      [
+       2,
+       "Tom Becker"
+      ],
+      [
+       3,
+       "Lina Okafor"
+      ],
+      [
+       4,
+       "Raj Patel"
+      ]
+     ],
+     "Books": [
+      [
+       1,
+       "A",
+       null,
+       10
+      ],
+      [
+       2,
+       "B",
+       null,
+       20
+      ],
+      [
+       3,
+       "C",
+       null,
+       30
+      ]
+     ]
+    },
+    "expected": []
+   },
+   {
+    "name": "same_name_two_authors",
+    "edge": true,
+    "weight": 2,
+    "tables": {
+     "Authors": [
+      [
+       1,
+       "Meera Iyer"
+      ],
+      [
+       2,
+       "Tom Becker"
+      ],
+      [
+       3,
+       "Lina Okafor"
+      ],
+      [
+       4,
+       "Raj Patel"
+      ],
+      [
+       5,
+       "Meera Iyer"
+      ]
+     ],
+     "Books": [
+      [
+       1,
+       "A",
+       1,
+       10
+      ],
+      [
+       2,
+       "B",
+       1,
+       20
+      ],
+      [
+       3,
+       "C",
+       5,
+       30
+      ],
+      [
+       4,
+       "D",
+       5,
+       40
+      ]
+     ]
+    },
+    "expected": [
+     [
+      "Meera Iyer",
+      2
+     ],
+     [
+      "Meera Iyer",
+      2
+     ]
+    ]
+   },
+   {
+    "name": "author_without_books",
+    "edge": false,
+    "weight": 1,
+    "tables": {
+     "Authors": [
+      [
+       1,
+       "Meera Iyer"
+      ],
+      [
+       2,
+       "Tom Becker"
+      ],
+      [
+       3,
+       "Lina Okafor"
+      ],
+      [
+       4,
+       "Raj Patel"
+      ]
+     ],
+     "Books": [
+      [
+       1,
+       "A",
+       2,
+       10
+      ],
+      [
+       2,
+       "B",
+       2,
+       20
+      ],
+      [
+       3,
+       "C",
+       2,
+       30
+      ]
+     ]
+    },
+    "expected": [
+     [
+      "Tom Becker",
+      3
+     ]
+    ]
+   },
+   {
+    "name": "larger",
+    "edge": false,
+    "weight": 1,
+    "tables": {
+     "Authors": [
+      [
+       1,
+       "Meera Iyer"
+      ],
+      [
+       2,
+       "Tom Becker"
+      ],
+      [
+       3,
+       "Lina Okafor"
+      ],
+      [
+       4,
+       "Raj Patel"
+      ]
+     ],
+     "Books": [
+      [
+       1,
+       "Book 1",
+       2,
+       137
+      ],
+      [
+       2,
+       "Book 2",
+       3,
+       174
+      ],
+      [
+       3,
+       "Book 3",
+       4,
+       211
+      ],
+      [
+       4,
+       "Book 4",
+       1,
+       248
+      ],
+      [
+       5,
+       "Book 5",
+       2,
+       285
+      ],
+      [
+       6,
+       "Book 6",
+       3,
+       322
+      ],
+      [
+       7,
+       "Book 7",
+       null,
+       359
+      ],
+      [
+       8,
+       "Book 8",
+       1,
+       396
+      ],
+      [
+       9,
+       "Book 9",
+       2,
+       433
+      ],
+      [
+       10,
+       "Book 10",
+       3,
+       470
+      ],
+      [
+       11,
+       "Book 11",
+       4,
+       107
+      ],
+      [
+       12,
+       "Book 12",
+       1,
+       144
+      ],
+      [
+       13,
+       "Book 13",
+       2,
+       181
+      ],
+      [
+       14,
+       "Book 14",
+       null,
+       218
+      ],
+      [
+       15,
+       "Book 15",
+       4,
+       255
+      ],
+      [
+       16,
+       "Book 16",
+       1,
+       292
+      ],
+      [
+       17,
+       "Book 17",
+       2,
+       329
+      ],
+      [
+       18,
+       "Book 18",
+       3,
+       366
+      ],
+      [
+       19,
+       "Book 19",
+       4,
+       403
+      ],
+      [
+       20,
+       "Book 20",
+       1,
+       440
+      ],
+      [
+       21,
+       "Book 21",
+       null,
+       477
+      ],
+      [
+       22,
+       "Book 22",
+       3,
+       114
+      ],
+      [
+       23,
+       "Book 23",
+       4,
+       151
+      ],
+      [
+       24,
+       "Book 24",
+       1,
+       188
+      ],
+      [
+       25,
+       "Book 25",
+       2,
+       225
+      ],
+      [
+       26,
+       "Book 26",
+       3,
+       262
+      ],
+      [
+       27,
+       "Book 27",
+       4,
+       299
+      ],
+      [
+       28,
+       "Book 28",
+       null,
+       336
+      ],
+      [
+       29,
+       "Book 29",
+       2,
+       373
+      ],
+      [
+       30,
+       "Book 30",
+       3,
+       410
+      ],
+      [
+       31,
+       "Book 31",
+       4,
+       447
+      ],
+      [
+       32,
+       "Book 32",
+       1,
+       484
+      ],
+      [
+       33,
+       "Book 33",
+       2,
+       121
+      ],
+      [
+       34,
+       "Book 34",
+       3,
+       158
+      ],
+      [
+       35,
+       "Book 35",
+       null,
+       195
+      ],
+      [
+       36,
+       "Book 36",
+       1,
+       232
+      ],
+      [
+       37,
+       "Book 37",
+       2,
+       269
+      ],
+      [
+       38,
+       "Book 38",
+       3,
+       306
+      ],
+      [
+       39,
+       "Book 39",
+       4,
+       343
+      ],
+      [
+       40,
+       "Book 40",
+       1,
+       380
+      ],
+      [
+       41,
+       "Book 41",
+       2,
+       417
+      ],
+      [
+       42,
+       "Book 42",
+       null,
+       454
+      ],
+      [
+       43,
+       "Book 43",
+       4,
+       491
+      ],
+      [
+       44,
+       "Book 44",
+       1,
+       128
+      ],
+      [
+       45,
+       "Book 45",
+       2,
+       165
+      ],
+      [
+       46,
+       "Book 46",
+       3,
+       202
+      ],
+      [
+       47,
+       "Book 47",
+       4,
+       239
+      ],
+      [
+       48,
+       "Book 48",
+       1,
+       276
+      ],
+      [
+       49,
+       "Book 49",
+       null,
+       313
+      ],
+      [
+       50,
+       "Book 50",
+       3,
+       350
+      ],
+      [
+       51,
+       "Book 51",
+       4,
+       387
+      ],
+      [
+       52,
+       "Book 52",
+       1,
+       424
+      ],
+      [
+       53,
+       "Book 53",
+       2,
+       461
+      ],
+      [
+       54,
+       "Book 54",
+       3,
+       498
+      ],
+      [
+       55,
+       "Book 55",
+       4,
+       135
+      ],
+      [
+       56,
+       "Book 56",
+       null,
+       172
+      ],
+      [
+       57,
+       "Book 57",
+       2,
+       209
+      ],
+      [
+       58,
+       "Book 58",
+       3,
+       246
+      ],
+      [
+       59,
+       "Book 59",
+       4,
+       283
+      ],
+      [
+       60,
+       "Book 60",
+       1,
+       320
+      ],
+      [
+       61,
+       "Book 61",
+       2,
+       357
+      ],
+      [
+       62,
+       "Book 62",
+       3,
+       394
+      ],
+      [
+       63,
+       "Book 63",
+       null,
+       431
+      ],
+      [
+       64,
+       "Book 64",
+       1,
+       468
+      ],
+      [
+       65,
+       "Book 65",
+       2,
+       105
+      ],
+      [
+       66,
+       "Book 66",
+       3,
+       142
+      ],
+      [
+       67,
+       "Book 67",
+       4,
+       179
+      ],
+      [
+       68,
+       "Book 68",
+       1,
+       216
+      ],
+      [
+       69,
+       "Book 69",
+       2,
+       253
+      ],
+      [
+       70,
+       "Book 70",
+       null,
+       290
+      ],
+      [
+       71,
+       "Book 71",
+       4,
+       327
+      ],
+      [
+       72,
+       "Book 72",
+       1,
+       364
+      ],
+      [
+       73,
+       "Book 73",
+       2,
+       401
+      ],
+      [
+       74,
+       "Book 74",
+       3,
+       438
+      ],
+      [
+       75,
+       "Book 75",
+       4,
+       475
+      ],
+      [
+       76,
+       "Book 76",
+       1,
+       112
+      ],
+      [
+       77,
+       "Book 77",
+       null,
+       149
+      ],
+      [
+       78,
+       "Book 78",
+       3,
+       186
+      ],
+      [
+       79,
+       "Book 79",
+       4,
+       223
+      ],
+      [
+       80,
+       "Book 80",
+       1,
+       260
+      ],
+      [
+       81,
+       "Book 81",
+       2,
+       297
+      ],
+      [
+       82,
+       "Book 82",
+       3,
+       334
+      ],
+      [
+       83,
+       "Book 83",
+       4,
+       371
+      ],
+      [
+       84,
+       "Book 84",
+       null,
+       408
+      ],
+      [
+       85,
+       "Book 85",
+       2,
+       445
+      ],
+      [
+       86,
+       "Book 86",
+       3,
+       482
+      ],
+      [
+       87,
+       "Book 87",
+       4,
+       119
+      ],
+      [
+       88,
+       "Book 88",
+       1,
+       156
+      ],
+      [
+       89,
+       "Book 89",
+       2,
+       193
+      ],
+      [
+       90,
+       "Book 90",
+       3,
+       230
+      ],
+      [
+       91,
+       "Book 91",
+       null,
+       267
+      ],
+      [
+       92,
+       "Book 92",
+       1,
+       304
+      ],
+      [
+       93,
+       "Book 93",
+       2,
+       341
+      ],
+      [
+       94,
+       "Book 94",
+       3,
+       378
+      ],
+      [
+       95,
+       "Book 95",
+       4,
+       415
+      ],
+      [
+       96,
+       "Book 96",
+       1,
+       452
+      ],
+      [
+       97,
+       "Book 97",
+       2,
+       489
+      ],
+      [
+       98,
+       "Book 98",
+       null,
+       126
+      ],
+      [
+       99,
+       "Book 99",
+       4,
+       163
+      ],
+      [
+       100,
+       "Book 100",
+       1,
+       200
+      ],
+      [
+       101,
+       "Book 101",
+       2,
+       237
+      ],
+      [
+       102,
+       "Book 102",
+       3,
+       274
+      ],
+      [
+       103,
+       "Book 103",
+       4,
+       311
+      ],
+      [
+       104,
+       "Book 104",
+       1,
+       348
+      ],
+      [
+       105,
+       "Book 105",
+       null,
+       385
+      ],
+      [
+       106,
+       "Book 106",
+       3,
+       422
+      ],
+      [
+       107,
+       "Book 107",
+       4,
+       459
+      ],
+      [
+       108,
+       "Book 108",
+       1,
+       496
+      ],
+      [
+       109,
+       "Book 109",
+       2,
+       133
+      ],
+      [
+       110,
+       "Book 110",
+       3,
+       170
+      ],
+      [
+       111,
+       "Book 111",
+       4,
+       207
+      ],
+      [
+       112,
+       "Book 112",
+       null,
+       244
+      ],
+      [
+       113,
+       "Book 113",
+       2,
+       281
+      ],
+      [
+       114,
+       "Book 114",
+       3,
+       318
+      ],
+      [
+       115,
+       "Book 115",
+       4,
+       355
+      ],
+      [
+       116,
+       "Book 116",
+       1,
+       392
+      ],
+      [
+       117,
+       "Book 117",
+       2,
+       429
+      ],
+      [
+       118,
+       "Book 118",
+       3,
+       466
+      ],
+      [
+       119,
+       "Book 119",
+       null,
+       103
+      ],
+      [
+       120,
+       "Book 120",
+       1,
+       140
+      ],
+      [
+       121,
+       "Book 121",
+       2,
+       177
+      ],
+      [
+       122,
+       "Book 122",
+       3,
+       214
+      ],
+      [
+       123,
+       "Book 123",
+       4,
+       251
+      ],
+      [
+       124,
+       "Book 124",
+       1,
+       288
+      ],
+      [
+       125,
+       "Book 125",
+       2,
+       325
+      ],
+      [
+       126,
+       "Book 126",
+       null,
+       362
+      ],
+      [
+       127,
+       "Book 127",
+       4,
+       399
+      ],
+      [
+       128,
+       "Book 128",
+       1,
+       436
+      ],
+      [
+       129,
+       "Book 129",
+       2,
+       473
+      ],
+      [
+       130,
+       "Book 130",
+       3,
+       110
+      ],
+      [
+       131,
+       "Book 131",
+       4,
+       147
+      ],
+      [
+       132,
+       "Book 132",
+       1,
+       184
+      ],
+      [
+       133,
+       "Book 133",
+       null,
+       221
+      ],
+      [
+       134,
+       "Book 134",
+       3,
+       258
+      ],
+      [
+       135,
+       "Book 135",
+       4,
+       295
+      ],
+      [
+       136,
+       "Book 136",
+       1,
+       332
+      ],
+      [
+       137,
+       "Book 137",
+       2,
+       369
+      ],
+      [
+       138,
+       "Book 138",
+       3,
+       406
+      ],
+      [
+       139,
+       "Book 139",
+       4,
+       443
+      ],
+      [
+       140,
+       "Book 140",
+       null,
+       480
+      ],
+      [
+       141,
+       "Book 141",
+       2,
+       117
+      ],
+      [
+       142,
+       "Book 142",
+       3,
+       154
+      ],
+      [
+       143,
+       "Book 143",
+       4,
+       191
+      ],
+      [
+       144,
+       "Book 144",
+       1,
+       228
+      ],
+      [
+       145,
+       "Book 145",
+       2,
+       265
+      ],
+      [
+       146,
+       "Book 146",
+       3,
+       302
+      ],
+      [
+       147,
+       "Book 147",
+       null,
+       339
+      ],
+      [
+       148,
+       "Book 148",
+       1,
+       376
+      ],
+      [
+       149,
+       "Book 149",
+       2,
+       413
+      ],
+      [
+       150,
+       "Book 150",
+       3,
+       450
+      ]
+     ]
+    },
+    "expected": [
+     [
+      "Meera Iyer",
+      32
+     ],
+     [
+      "Tom Becker",
+      33
+     ],
+     [
+      "Lina Okafor",
+      33
+     ],
+     [
+      "Raj Patel",
+      31
+     ]
+    ]
+   }
+  ]
+ }
+]

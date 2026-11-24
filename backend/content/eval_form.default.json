@@ -1,0 +1,137 @@
+{
+  "name": "College mock interview form",
+  "criteria": [
+    {
+      "id": "appearance",
+      "label": "Professional Appearance and Grooming",
+      "scale": [
+        1,
+        10
+      ],
+      "source": "interviewer"
+    },
+    {
+      "id": "body_language",
+      "label": "Confidence and Body Language",
+      "scale": [
+        1,
+        10
+      ],
+      "source": "interviewer"
+    },
+    {
+      "id": "communication",
+      "label": "Communication Skills (Clarity, Fluency and Articulation)",
+      "scale": [
+        1,
+        10
+      ],
+      "source": "ai"
+    },
+    {
+      "id": "intro",
+      "label": "Self-Introduction and Career Goals",
+      "scale": [
+        1,
+        10
+      ],
+      "source": "ai"
+    },
+    {
+      "id": "technical",
+      "label": "Technical Knowledge (Core Fundamentals)",
+      "scale": [
+        1,
+        10
+      ],
+      "source": "ai"
+    },
+    {
+      "id": "problem_solving",
+      "label": "Problem Solving and Analytical Thinking",
+      "scale": [
+        1,
+        10
+      ],
+      "source": "ai"
+    },
+    {
+      "id": "projects",
+      "label": "Project / Practical / Internship Exposure",
+      "scale": [
+        1,
+        10
+      ],
+      "source": "ai"
+    },
+    {
+      "id": "resume",
+      "label": "Resume Quality",
+      "scale": [
+        1,
+        10
+      ],
+      "source": "ai"
+    },
+    {
+      "id": "attitude",
+      "label": "Attitude, Learning Mindset and Professionalism",
+      "scale": [
+        1,
+        10
+      ],
+      "source": "ai_draft"
+    },
+    {
+      "id": "overall",
+      "label": "Overall Employability and Suitability",
+      "scale": [
+        1,
+        10
+      ],
+      "source": "ai"
+    }
+  ],
+  "overall_assessment": [
+    {
+      "label": "Excellent (placement ready)",
+      "min": 8.5
+    },
+    {
+      "label": "Very good",
+      "min": 7.0
+    },
+    {
+      "label": "Good",
+      "min": 5.5
+    },
+    {
+      "label": "Average",
+      "min": 4.0
+    },
+    {
+      "label": "Needs Intensive Training Before Placement",
+      "min": 0
+    }
+  ],
+  "recommendation": [
+    {
+      "label": "Yes – Ready for Campus Recruitment",
+      "min": 8.0,
+      "requires": {
+        "coding_pct": 60
+      }
+    },
+    {
+      "label": "Conditional – Needs more preparation first",
+      "min": 5.5
+    }
+  ],
+  "text_fields": [
+    "Strengths Observed",
+    "Areas for Improvement",
+    "Specific Suggestions to the Student"
+  ],
+  "recommendation_fallback": "Not Yet – Needs Additional Training",
+  "overall_formula": "equal_mean"
+}

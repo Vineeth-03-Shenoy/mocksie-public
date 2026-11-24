@@ -1,0 +1,39 @@
+
+# secrets and keys: never commit these (a pre-commit hook and CI also scan for them)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+id_rsa*
+id_ed25519*
+
+# candidate data: resumes, uploads and anything derived from them
+uploads/
+resumes/
+**/uploads/
+**/resumes/
+**/*resume*.pdf
+**/*resume*.docx
+**/*resume*.doc
+backend/data/
+
+# local databases and tool output
+*.db
+*.sqlite
+*.sqlite3
+__pycache__/
+.venv/
+node_modules/
+.next/
+.pytest_cache/
+.ruff_cache/
+security-reports/
+
+# Next.js build output and generated types
+frontend/.next/
+frontend/next-env.d.ts
+frontend/tsconfig.tsbuildinfo

@@ -1,0 +1,6 @@
+#!/bin/sh
+# Blocks a commit that contains a secret. Scans what is STAGED. Needs Docker (the scan is never silently skipped).
+# Enable once per clone:  git config core.hooksPath .githooks     (or: make hooks)
+PY=python
+command -v python >/dev/null 2>&1 || PY=python3
+exec "$PY" scripts/secret_scan.py --staged

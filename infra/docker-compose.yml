@@ -1,0 +1,39 @@
+# Start the code judge only (what you need right now):
+#   docker compose -f infra/docker-compose.yml up -d piston
+#   python infra/piston_install.py          # one-time: installs python, java, gcc into Piston
+# The app services below are placeholders until the backend and frontend have Dockerfiles.
+services:
+  piston:
+    build: ./piston              # Debian 12 rebuild (upstream image is Debian 10, EOL)
+    image: mocksie-piston:bookworm
+    container_name: mocksie-piston
+    privileged: true            # Piston needs this to build its own per-run sandbox
+    restart: unless-stopped
+    ports: ["127.0.0.1:2000:2000"]   # localhost only: never expose the sandbox to the Wi-Fi
+    tmpfs: ["/piston/jobs:exec,uid=1000,gid=1000,mode=711"]
+    volumes: ["piston_packages_bw:/piston/packages"]
+    environment:
+      PISTON_DISABLE_NETWORKING: "true"        # candidate code gets no network
+      PISTON_RUN_TIMEOUT: "5000"               # ms, hard cap (we also send a per-test limit)
+      PISTON_COMPILE_TIMEOUT: "10000"
+      PISTON_RUN_MEMORY_LIMIT: "268435456"     # 256 MB
+      PISTON_COMPILE_MEMORY_LIMIT: "268435456"
+      PISTON_OUTPUT_MAX_SIZE: "1048576"        # 1 MB of output
+      PISTON_MAX_PROCESS_COUNT: "64"
+
+  backend:
+    profiles: ["app"]
+    build: ../backend
+    env_file: ../.env
+    ports: ["8000:8000"]
+    volumes: ["../backend/data:/app/data"]
+
+  frontend:
+    profiles: ["app"]
+    build: ../frontend
+    ports: ["3000:3000"]
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+
+volumes:
+  piston_packages_bw:
