@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 566" width="1200" height="566" role="img" aria-label="Mocksie interview flow" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
+<title>Mocksie interview flow</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/></marker></defs>
+<rect x="0.5" y="0.5" width="1199" height="565" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<text x="600" y="34" font-size="18" font-weight="700" fill="#1f2328" text-anchor="middle">Mocksie: interview flow (one deterministic state machine)</text>
+<rect x="34" y="76" width="176" height="66" rx="10" fill="#eaf2ff" stroke="#2f6fdb" stroke-width="1.6"/>
+<text x="122.0" y="100" font-size="14" font-weight="600" fill="#1f2328" text-anchor="middle">Intro</text>
+<text x="122.0" y="120" font-size="12" font-weight="400" fill="#57606a" text-anchor="middle">1 question</text>
+<rect x="246" y="76" width="176" height="66" rx="10" fill="#eaf2ff" stroke="#2f6fdb" stroke-width="1.6"/>
+<text x="334.0" y="100" font-size="14" font-weight="600" fill="#1f2328" text-anchor="middle">Resume warm-up</text>
+<text x="334.0" y="120" font-size="12" font-weight="400" fill="#57606a" text-anchor="middle">1 question about a project</text>
+<rect x="458" y="76" width="176" height="66" rx="10" fill="#eaf2ff" stroke="#2f6fdb" stroke-width="1.6"/>
+<text x="546.0" y="100" font-size="14" font-weight="600" fill="#1f2328" text-anchor="middle">Behavioural</text>
+<text x="546.0" y="120" font-size="12" font-weight="400" fill="#57606a" text-anchor="middle">1 question</text>
+<rect x="670" y="76" width="176" height="66" rx="10" fill="#eaf2ff" stroke="#2f6fdb" stroke-width="1.6"/>
+<text x="758.0" y="100" font-size="14" font-weight="600" fill="#1f2328" text-anchor="middle">Technical questions</text>
+<text x="758.0" y="120" font-size="12" font-weight="400" fill="#57606a" text-anchor="middle">4, difficulty adapts</text>
+<rect x="882" y="76" width="176" height="66" rx="10" fill="#fff3e0" stroke="#d9822b" stroke-width="1.6"/>
+<text x="970.0" y="100" font-size="14" font-weight="600" fill="#1f2328" text-anchor="middle">Coding 1</text>
+<text x="970.0" y="120" font-size="12" font-weight="400" fill="#57606a" text-anchor="middle">voice pauses, timed</text>
+<line x1="210" y1="109.0" x2="246" y2="109.0" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<line x1="422" y1="109.0" x2="458" y2="109.0" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<line x1="634" y1="109.0" x2="670" y2="109.0" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<line x1="846" y1="109.0" x2="882" y2="109.0" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<line x1="970.0" y1="142" x2="970.0" y2="168" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<text x="980.0" y="154" font-size="11" font-weight="400" fill="#57606a" text-anchor="start">judged by hidden tests</text>
+<rect x="882" y="176" width="176" height="66" rx="10" fill="#e9f6ee" stroke="#2e8b57" stroke-width="1.6"/>
+<text x="970.0" y="200" font-size="14" font-weight="600" fill="#1f2328" text-anchor="middle">Coding 2</text>
+<text x="970.0" y="220" font-size="12" font-weight="400" fill="#57606a" text-anchor="middle">if coding 1 went well</text>
+<rect x="882" y="262" width="176" height="66" rx="10" fill="#fdecea" stroke="#cf4a3f" stroke-width="1.6"/>
+<text x="970.0" y="286" font-size="14" font-weight="600" fill="#1f2328" text-anchor="middle">More technical</text>
+<text x="970.0" y="306" font-size="12" font-weight="400" fill="#57606a" text-anchor="middle">3 more, if it did not</text>
+<text x="970.0" y="257" font-size="12" font-weight="600" fill="#57606a" text-anchor="middle">or</text>
+<rect x="670" y="214" width="176" height="66" rx="10" fill="#fff3e0" stroke="#d9822b" stroke-width="1.6"/>
+<text x="758.0" y="238" font-size="14" font-weight="600" fill="#1f2328" text-anchor="middle">SQL question</text>
+<text x="758.0" y="258" font-size="12" font-weight="400" fill="#57606a" text-anchor="middle">only if triggered</text>
+<line x1="882" y1="209.0" x2="846" y2="236" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<line x1="882" y1="295.0" x2="846" y2="258" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="458" y="214" width="176" height="66" rx="10" fill="#eaf2ff" stroke="#2f6fdb" stroke-width="1.6"/>
+<text x="546.0" y="238" font-size="14" font-weight="600" fill="#1f2328" text-anchor="middle">Candidate questions</text>
+<text x="546.0" y="258" font-size="12" font-weight="400" fill="#57606a" text-anchor="middle">up to 3, answered from the JD</text>
+<line x1="670" y1="247.0" x2="634" y2="247.0" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="246" y="214" width="176" height="66" rx="10" fill="#e9f6ee" stroke="#2e8b57" stroke-width="1.6"/>
+<text x="334.0" y="238" font-size="14" font-weight="600" fill="#1f2328" text-anchor="middle">Close</text>
+<text x="334.0" y="258" font-size="12" font-weight="400" fill="#57606a" text-anchor="middle">farewell, then scoring</text>
+<line x1="458" y1="247.0" x2="422" y2="247.0" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="34" y="214" width="176" height="66" rx="10" fill="#e9f6ee" stroke="#2e8b57" stroke-width="1.6"/>
+<text x="122.0" y="238" font-size="14" font-weight="600" fill="#1f2328" text-anchor="middle">Scoring</text>
+<text x="122.0" y="258" font-size="12" font-weight="400" fill="#57606a" text-anchor="middle">judge model + form</text>
+<line x1="246" y1="247.0" x2="210" y2="247.0" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<line x1="34" y1="364" x2="1166" y2="364" stroke="#d0d7de"/>
+<text x="40" y="394" font-size="13" font-weight="700" fill="#1f2328" text-anchor="start">SQL question</text>
+<text x="190" y="394" font-size="13" font-weight="400" fill="#57606a" text-anchor="start">asked only if the resume mentions SQL or the candidate says they are strong at it, and enough time remains.</text>
+<text x="40" y="424" font-size="13" font-weight="700" fill="#1f2328" text-anchor="start">Coding and SQL</text>
+<text x="190" y="424" font-size="13" font-weight="400" fill="#57606a" text-anchor="start">the conversation and both voice connections pause; the timer depends on difficulty; the draft is auto-submitted at zero.</text>
+<text x="40" y="454" font-size="13" font-weight="700" fill="#1f2328" text-anchor="start">Early end</text>
+<text x="190" y="454" font-size="13" font-weight="400" fill="#57606a" text-anchor="start">three misses in a row (no answer or skip) end the interview politely; a hard stop closes it at 40 minutes.</text>
+<text x="40" y="484" font-size="13" font-weight="700" fill="#1f2328" text-anchor="start">Difficulty</text>
+<text x="190" y="484" font-size="13" font-weight="400" fill="#57606a" text-anchor="start">technical questions start easy; level 3 unlocks only after two strong answers in a row.</text>
+<text x="40" y="514" font-size="13" font-weight="700" fill="#1f2328" text-anchor="start">Engine, not model</text>
+<text x="190" y="514" font-size="13" font-weight="400" fill="#57606a" text-anchor="start">the model may only request a move (next question, start coding, end); the engine checks and decides.</text>
+<text x="600" y="552" font-size="11" font-weight="400" fill="#57606a" text-anchor="middle" font-style="italic">Counts shown are the defaults; the sample question bank is smaller, so some stages are shorter.</text>
+</svg>

@@ -6,24 +6,15 @@ Mocksie runs a realistic practice interview for engineering students: it talks w
 
 ## Architecture and interview flow
 
-<!-- Add the exported diagrams here, e.g. ![Architecture](docs/images/architecture.png) -->
-> *Diagram placeholder: system architecture (`docs/images/architecture.png`)*
->
-> *Diagram placeholder: interview flow (`docs/images/interview-flow.png`)*
+![Mocksie system architecture](docs/images/architecture.svg)
+
+![Mocksie interview flow](docs/images/interview-flow.svg)
 
 In words: the interviewer signs in to a console, types the candidate's name (and any extra terms to hide), uploads the resume and sends a link. The candidate opens the link and talks to the interviewer. The backend runs one interview as a state machine:
 
 `intro` → `resume warm-up` → `behavioural` → `technical questions` → `coding 1` → (`more technical` or) `coding 2` → `SQL (if triggered)` → `candidate questions` → `close` → `scoring`
 
 While a coding or SQL task is open the conversation (and the voice connection) pauses; the task is judged by the sandbox, and the interviewer resumes with the result. After the interview a stronger model grades each answer twice, maps the evidence onto the evaluation form, and the interviewer reviews, overrides and finalises the results.
-
-## Screenshots
-
-> *Placeholders. Add images under `docs/images/` and link them here:*
-> - *Interviewer console: new interview, results list*
-> - *Candidate room: voice orb and chat*
-> - *Coding task panel with sample tests*
-> - *Results page in evaluation-form order, with evidence per score*
 
 ## Key engineering decisions
 

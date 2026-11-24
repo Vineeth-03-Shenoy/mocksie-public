@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img" aria-label="Mocksie system architecture" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
+<title>Mocksie system architecture</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/></marker></defs>
+<rect x="0.5" y="0.5" width="1199" height="719" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<text x="600" y="34" font-size="18" font-weight="700" fill="#1f2328" text-anchor="middle">Mocksie: system architecture</text>
+<rect x="30" y="60" width="260" height="590" rx="14" fill="none" stroke="#2f6fdb" stroke-width="1.4" stroke-dasharray="3 5" opacity="0.9"/>
+<text x="44" y="82" font-size="12" font-weight="700" fill="#2f6fdb" text-anchor="start">BROWSER</text>
+<rect x="330" y="60" width="540" height="650" rx="14" fill="none" stroke="#2e8b57" stroke-width="1.4" stroke-dasharray="3 5" opacity="0.9"/>
+<text x="344" y="82" font-size="12" font-weight="700" fill="#2e8b57" text-anchor="start">BACKEND  (FastAPI, Python)</text>
+<rect x="910" y="60" width="260" height="590" rx="14" fill="none" stroke="#7a4fd1" stroke-width="1.4" stroke-dasharray="3 5" opacity="0.9"/>
+<text x="924" y="82" font-size="12" font-weight="700" fill="#7a4fd1" text-anchor="start">SERVICES</text>
+<rect x="48" y="96" width="224" height="110" rx="10" fill="#eaf2ff" stroke="#2f6fdb" stroke-width="1.6"/>
+<text x="62" y="120" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Interviewer console</text>
+<text x="62" y="140" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">/admin (Next.js)</text>
+<text x="62" y="157" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">new interview, resume upload,</text>
+<text x="62" y="174" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">settings, results, overrides</text>
+<rect x="350" y="96" width="500" height="110" rx="10" fill="#e9f6ee" stroke="#2e8b57" stroke-width="1.6"/>
+<text x="364" y="120" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">API routes</text>
+<text x="364" y="140" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">login, sessions, coding / SQL tasks, results, settings</text>
+<text x="364" y="157" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">interviewer cookie login; candidate link token; origin checks</text>
+<text x="364" y="174" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">serves the typed chat and the task editor</text>
+<line x1="272" y1="150" x2="350" y2="150" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<text x="311" y="140" font-size="11" font-weight="400" fill="#57606a" text-anchor="middle">HTTPS</text>
+<rect x="48" y="236" width="224" height="120" rx="10" fill="#eaf2ff" stroke="#2f6fdb" stroke-width="1.6"/>
+<text x="62" y="260" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Candidate room</text>
+<text x="62" y="280" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">/i/[token]</text>
+<text x="62" y="297" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">voice orb + microphone</text>
+<text x="62" y="314" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">chat fallback, code / SQL editor</text>
+<rect x="350" y="236" width="500" height="120" rx="10" fill="#e9f6ee" stroke="#2e8b57" stroke-width="1.6"/>
+<text x="364" y="260" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Voice session</text>
+<text x="364" y="280" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">one websocket per interview; turn logic lives here</text>
+<text x="364" y="297" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">no-answer, mid-answer pause and answer-cap timers</text>
+<text x="364" y="314" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">barge-in setting; sockets close while a task is open</text>
+<line x1="272" y1="296" x2="350" y2="296" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<text x="311" y="286" font-size="11" font-weight="400" fill="#57606a" text-anchor="middle">audio</text>
+<rect x="928" y="236" width="224" height="120" rx="10" fill="#f1eaff" stroke="#7a4fd1" stroke-width="1.6"/>
+<text x="942" y="260" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Deepgram</text>
+<text x="942" y="280" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">Flux: speech to text</text>
+<text x="942" y="297" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">with end-of-turn detection</text>
+<text x="942" y="314" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">Aura-2: text to speech</text>
+<line x1="850" y1="296" x2="928" y2="296" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<text x="889" y="286" font-size="11" font-weight="400" fill="#57606a" text-anchor="middle">audio</text>
+<rect x="350" y="392" width="170" height="112" rx="10" fill="#e9f6ee" stroke="#2e8b57" stroke-width="1.6"/>
+<text x="364" y="416" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Orchestrator</text>
+<text x="364" y="436" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">state machine +</text>
+<text x="364" y="453" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">engine: picks every</text>
+<text x="364" y="470" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">question, validates</text>
+<text x="364" y="487" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">the model&#x27;s tools</text>
+<rect x="540" y="392" width="150" height="112" rx="10" fill="#fff3e0" stroke="#d9822b" stroke-width="1.6"/>
+<text x="554" y="416" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Guardrails</text>
+<text x="554" y="436" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">PII redactor</text>
+<text x="554" y="453" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">injection fence</text>
+<text x="554" y="470" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">output guard</text>
+<rect x="710" y="392" width="140" height="112" rx="10" fill="#fff3e0" stroke="#d9822b" stroke-width="1.6"/>
+<text x="724" y="416" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">LLM client</text>
+<text x="724" y="436" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">name + pattern</text>
+<text x="724" y="453" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">tripwire, no</text>
+<text x="724" y="470" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">storage, usage</text>
+<text x="724" y="487" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">pools</text>
+<line x1="520" y1="448" x2="540" y2="448" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<line x1="690" y1="448" x2="710" y2="448" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<line x1="450" y1="356" x2="450" y2="392" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="928" y="392" width="224" height="112" rx="10" fill="#f1eaff" stroke="#7a4fd1" stroke-width="1.6"/>
+<text x="942" y="416" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">OpenAI</text>
+<text x="942" y="436" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">interviewer: gpt-5.4-mini</text>
+<text x="942" y="453" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">quick grade: gpt-5.4-nano</text>
+<text x="942" y="470" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">judge: gpt-5.4</text>
+<line x1="850" y1="448" x2="928" y2="448" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<text x="889" y="438" font-size="11" font-weight="400" fill="#57606a" text-anchor="middle">text</text>
+<text x="1040" y="524" font-size="11" font-weight="600" fill="#b45f12" text-anchor="middle" font-style="italic">only redacted text is ever sent</text>
+<rect x="350" y="546" width="240" height="100" rx="10" fill="#e9f6ee" stroke="#2e8b57" stroke-width="1.6"/>
+<text x="364" y="570" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Scoring</text>
+<text x="364" y="590" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">each answer graded twice, evidence</text>
+<text x="364" y="607" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">checked, form mapping, overall</text>
+<text x="364" y="624" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">score; runs after the interview</text>
+<line x1="450" y1="504" x2="450" y2="546" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="610" y="546" width="240" height="100" rx="10" fill="#e9f6ee" stroke="#2e8b57" stroke-width="1.6"/>
+<text x="624" y="570" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Code and SQL judge</text>
+<text x="624" y="590" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">hidden tests, weighted by edge</text>
+<text x="624" y="607" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">cases; SQL rows compared as a</text>
+<text x="624" y="624" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">multiset, read-only</text>
+<rect x="928" y="546" width="224" height="100" rx="10" fill="#f1eaff" stroke="#7a4fd1" stroke-width="1.6"/>
+<text x="942" y="570" font-size="14" font-weight="600" fill="#1f2328" text-anchor="start">Piston sandbox</text>
+<text x="942" y="590" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">Docker, Debian 12</text>
+<text x="942" y="607" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">Python, Java, C; no network</text>
+<text x="942" y="624" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">CPU, memory, time limits</text>
+<line x1="850" y1="596" x2="928" y2="596" stroke="#8c959f" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="350" y="662" width="500" height="36" rx="10" fill="#f3f4f6" stroke="#6e7781" stroke-width="1.6"/>
+<text x="600.0" y="686" font-size="12" font-weight="600" fill="#1f2328" text-anchor="middle">SQLite: interviews, redacted transcripts, results, settings</text>
+<text x="600" y="706" font-size="1" font-weight="400" fill="#1f2328" text-anchor="start"></text>
+</svg>
